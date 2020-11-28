@@ -1,0 +1,197 @@
+html, body{
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+input {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  /* padding-bottom: 100px; */
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2, h3 {
+  font-size: 2.5rem;
+  margin: 0 0 .25em 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* first example */
+.container {
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+  padding: 30px;
+  background-color: #FFF;
+}
+
+.form-row {
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* second example */
+.column-layout {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  padding: 20px 50px;
+  line-height: 1.65;
+  display: flex;
+}
+
+.main-column {
+  flex: 2;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+}
+
+/* カラムの親要素 */
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 20px auto;
+  border: 2px solid black;
+}
+
+/* カラムの要素 */
+.call-out {
+  padding: 20px;
+  box-sizing:border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* カラムの要素 */
+.call-out-2 {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccb9da;}
+
+.call-out-2:nth-child(1) {background-color: #c0dbe2;}
+.call-out-2:nth-child(2) {background-color: #cdf1c3;}
+.call-out-2:nth-child(3) {background-color: #ccb9da;}
+
+/* 以下自作 */
+ /* ***************************************
+FloxBoxを使った３カラムレイアウト(marginを付ける)
+***************************************  */
+/* base */
+img {
+  width: 100%;
+}
+
+/* コード */
+.code-content {
+  background: black;
+  color: #fff;
+}
+
+.lesson-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #bbb;
+  font-size: 2rem;
+}
+
+.lesson-content {
+  border: 1px solid black;
+  margin: 50px 0 0 0;
+}
+
+p.imgProblem {
+  padding: 5px 10px 5px 10px;
+  font-size: 2.5rem;
+  /* text-align: center; */
+}
+
+div.two-columns {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+div.two-columns h3 {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div.left-column, div.right-column {
+  flex-basis: 45%;
+}
+
+div.right-columns {
+  background: red;
+  margin-top: 50px;
+}
+
+div.right-columns h3{
+  margin-top: 20px;
+  font-size: 150px;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  padding-top: 25px
+}
+
+@media (min-width: 750px) {
+  div.two-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+}
